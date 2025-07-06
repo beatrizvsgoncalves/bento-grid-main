@@ -1,0 +1,148 @@
+@media screen and (min-width: 48rem) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+    place-self: center;
+    max-width: 35rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  .card-grow-followers h2,
+  .card-create-post h2,
+  .card-ai-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .card-audience-growth h2,
+  p {
+    font-size: 1.3rem;
+  }
+
+  h2, p:not(.card-main p) {
+    text-align: left;
+  }
+
+  .card {
+    overflow: hidden;
+    padding: 1.5rem;
+  }
+  
+  .card-main {
+    grid-column: 1 / 3;
+    padding: 3rem;
+  }
+  .card-main h1 {
+    font-size: 3rem;
+  }
+  
+  .card-platforms img {
+    width: 150%;
+  }
+
+  .card-consistent-schedule img {
+    margin-bottom: -70%;
+    width: 100%;
+  }
+
+  .card-schedule-posts {
+    padding: 3rem 1.5rem;
+  }
+  .card-schedule-posts img {
+    margin: 1.5rem 0;
+    width: 180%;
+  }
+  .card-schedule-posts p {
+    padding: 0;
+  }
+    
+  .card-grow-followers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 3;
+    grid-column: 2;
+  }
+  .card-grow-followers h2 {
+    margin-top: 3rem;
+  }
+  
+  .card-audience-growth {
+    grid-column: 1 / 3;
+  }
+  .card-audience-growth h2 {
+    margin-bottom: 3rem;
+  }
+  .text-larger {
+    font-size: 3.5rem;
+  }
+
+  .content-side {
+    grid-column: 1 / 3;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-create-post {
+    padding: 4rem 1.5rem;
+  }
+  .card-create-post img {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+
+  .card-ai-content img {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  body {
+    padding: 4rem 8%;
+  }
+
+  .content {
+    max-width: none;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'content-side main main schedule-posts'
+    'content-side platforms consistent schedule-posts'
+    'content-side audience-growth grow-followers grow-followers'
+    ;
+  }
+
+  .card-main {
+    grid-area: main;
+  }
+
+  .card-platforms {
+    grid-area: platforms;
+  }
+
+  .card-schedule-posts {
+    grid-area: schedule-posts;
+  }
+
+  .card-audience-growth {
+    grid-area: audience-growth;
+  }
+
+  .card-grow-followers {
+    grid-area: grow-followers;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .card-grow-followers img {
+    width: 50%;
+  }
+  .card-grow-followers h2 {
+    margin-top: 0;
+  }
+
+  .content-side{
+    grid-area: content-side;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}

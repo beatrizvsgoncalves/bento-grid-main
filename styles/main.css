@@ -29,6 +29,8 @@ body {
 .content {
   display: grid;
   gap: 2rem;
+  margin: auto;
+  max-width: 25rem;
 }
 
 .card {
@@ -56,6 +58,10 @@ p {
 .card-main {
   background-color: var(--color-purple-500);
   color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2.5rem 3rem;
   text-align: center;
 }
@@ -63,12 +69,12 @@ p {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-.card-main .text-yellow {
+.text-yellow {
   color: var(--color-yellow-500);
 }
 .card-main img {
   margin-bottom: .2rem;
-  width: 75%;
+  width: 12rem;
 }
 
 .card-platforms {
@@ -126,7 +132,7 @@ p {
   font-size: 1.125rem;
   margin-bottom: 1.5rem;
 }
-.card-audience-growth .text-larger {
+.text-larger {
   display: block;
   font-size: 2.5rem;
   margin-bottom: .8rem;
@@ -140,6 +146,11 @@ p {
   width: 60%;
 }
 
+.content-side {
+  display: grid;
+  gap: 2rem;
+}
+
 .card-create-post {
   background-color: var(--color-yellow-100);
   padding: 1.5rem 2rem;
@@ -147,7 +158,7 @@ p {
 .card-create-post h2 {
   font-size: 1.7rem;
 }
-.card-create-post .text-purple {
+.text-purple {
   color: var(--color-purple-500);
 }
 .card-create-post img {
