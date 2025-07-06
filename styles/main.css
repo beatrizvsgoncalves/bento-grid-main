@@ -102,5 +102,6 @@ img {
 }
 
 .footer a:hover {
+  color: var(--color-black);
   text-decoration: underline;
 }
