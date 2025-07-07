@@ -17,38 +17,51 @@
 body {
   background-color: var(--color-bg);
   display: grid;
-  gap: 2rem;
-  grid-template-rows: 1fr 5rem;
+  gap: 2vh;
+  grid-template-rows: 1fr 15vh;
   font-family: 'DM Sans', sans-serif;
   height: 100vh;
-  padding: 2rem 1rem;
+  padding: 3vh 2.3vh;
 }
 
 /* content */
 
 .content {
   display: grid;
-  gap: 2rem;
+  gap: 4.5vh;
+  justify-content: center;
   margin: auto;
-  max-width: 25rem;
+  width: 100%;
 }
 
 .card {
-  border-radius: .7rem;
-  padding: 1rem;
+  border-radius: 1.5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2vh;
+  padding: 2.3vh;
+  overflow: hidden;
+  max-width: 60vh;
 }
 
 h1, h2 {
   font-weight: 500;
-  line-height: 1;
+  line-height: .9;
 }
 
 h2 {
-  font-size: 1.5rem;
+  letter-spacing: -.08rem;
+  font-size: 3.8vh;
+}
+
+.card-grow-followers h2,
+.card-create-post h2,
+.card-ai-content h2 {
+  font-size: 4.6vh;
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 2.6vh;
   font-weight: 400;
   line-height: 1.1;
 }
@@ -56,25 +69,28 @@ p {
 /* individual cards */
 
 .card-main {
+  align-items: center;
   background-color: var(--color-purple-500);
   color: var(--color-white);
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 2.5rem 3rem;
+  padding: 5vh 3vh;
   text-align: center;
 }
 .card-main h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 6.8vh;
+  max-width: 40vh;
 }
 .text-yellow {
   color: var(--color-yellow-500);
 }
 .card-main img {
-  margin-bottom: .2rem;
-  width: 12rem;
+  margin-bottom: -1vh;
+  margin-top: 1vh;
+  max-width: 12rem;
+  width: 60%;
+}
+.card-main p {
+  color: var(--color-purple-100);
 }
 
 .card-platforms {
@@ -83,107 +99,99 @@ p {
 .card-platforms img {
   width: 100%;
 }
-.card-platforms h2 {
-  margin-top: .5rem;
-}
 
 .card-consistent-schedule {
   background-color: var(--color-yellow-500);
-  padding-bottom: 0;
 }
 .card-consistent-schedule img {
-  margin-top: 1rem;
-  margin-bottom: -.35rem;
+  margin-bottom: -5.3vh;
+  object-fit: cover;
+  object-position: top;
   width: 70%;
 }
 
 .card-schedule-posts {
+  align-items: center;
   background-color: var(--color-purple-100);
-  padding: 2rem 1rem;
+  padding: 5vh 2.5vh;
   text-align: center;
 }
 .card-schedule-posts img {
-  margin: 1rem auto;
+  margin: 1vh;
   width: 100%;
 }
 .card-schedule-posts p {
-  padding: 0 .8rem;
+  padding: 1vh;
 }
 
 .card-grow-followers {
+  align-items: center;
   background-color: var(--color-purple-500);
   color: var(--color-white);
-  padding: 1rem 3rem;
+  padding: 3vh 5vh;
   text-align: center;
 }
 .card-grow-followers img {
-  width: 100%;
+  width: 85%;
 }
 .card-grow-followers h2 {
-  font-size: 1.7rem;
-  margin-top: 1.5rem;
+  margin-top: 3.5vh;
+  max-width: 85%;
 }
 
 .card-audience-growth {
   background-color: var(--color-white);
-  padding: 1.5rem;
+  padding: 3.5vh;
 }
 .card-audience-growth h2 {
-  font-size: 1.125rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.7vh;
+  margin-bottom: 1.5vh;
 }
 .text-larger {
   display: block;
-  font-size: 2.5rem;
-  margin-bottom: .8rem;
+  font-size: 6.5vh;
+  margin-bottom: 2vh;
 }
 .text-larger::before {
   content: '>';
   position: relative;
-  top: -.2rem;
+  top: -.5vh;
 }
 .card-audience-growth img {
-  width: 60%;
+  width: 65%;
 }
 
 .content-side {
   display: grid;
-  gap: 2rem;
+  gap: 4.5vh;
 }
 
 .card-create-post {
   background-color: var(--color-yellow-100);
-  padding: 1.5rem 2rem;
-}
-.card-create-post h2 {
-  font-size: 1.7rem;
+  gap: 3.5vh;
+  padding: 4.5vh;
 }
 .text-purple {
   color: var(--color-purple-500);
 }
 .card-create-post img {
-  margin-top: 1rem;
-  width: 70%;
+  width: 65%;
 }
 
 .card-ai-content {
   background-color: var(--color-yellow-500);
-  padding: 1.3rem;
-  padding-bottom: 1rem;
-}
-.card-ai-content h2 {
-  font-size: 1.7rem;
+  gap: 3.5vh;
+  padding: 3.5vh;
 }
 .card-ai-content img {
-  margin-top: 1rem;
-  width: 70%;
+  width: 75%;
 }
 
 /* footer */
 
 .footer {
   display: grid;
-  gap: .3rem;
+  gap: 1vw;
   place-content: center;
 }
 
