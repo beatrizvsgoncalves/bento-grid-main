@@ -5,6 +5,10 @@
 }
 
 @media screen and (min-width: 70rem) {
+  body {
+    padding: 5vw 0;
+  }
+
   .content {
     max-width: 85%;
     gap: 2vw;
@@ -18,13 +22,16 @@
   }
 
   .card {
-    padding: 2vw;
+    padding: 1.8vw;
     max-width: none;
   }
 
   .card-main {
     grid-area: main;
-    padding: 4vw 2vw;
+    padding: 4vw 3.5vw;
+  }
+  .card-main h1 {
+    max-width: none;
   }
 
   .card-platforms {
@@ -33,7 +40,7 @@
   .card-platforms img {
     object-fit: cover;
     object-position: left;
-    width: 150%;
+    width: 153%;
   }
 
   .card-consistent-schedule {
@@ -41,9 +48,10 @@
   }
   .card-consistent-schedule img {
     margin-bottom: -50%;
-    object-fit: cover;
-    object-position: top;
     width: 100%;
+  }
+  .card-schedule-posts p {
+    padding: 0;
   }
 
   .card-schedule-posts {
@@ -55,7 +63,7 @@
   .card-schedule-posts img {
     object-fit: cover;
     object-position: left;
-    width: 150%;
+    width: 180%;
   }
   .card-schedule-posts p {
     max-width: none;
@@ -69,12 +77,18 @@
   }
 
   .card-grow-followers {
+    gap: 1vw;
     grid-area: grow-followers;
     flex-direction: row;
+    padding: 1.5vw 1.8vw;
     text-align: left;
   }
   .card-grow-followers img {
     width: 45%;
+  }
+  .card-grow-followers h2 {
+    letter-spacing: normal;
+    margin-top: 0;
   }
 
   .content-side{
@@ -85,7 +99,7 @@
   }
 
   .card-create-post {
-    padding: 3vw 2.3vw;
+    justify-content: center;
   }
   .card-create-post img {
     width: 100%;
@@ -97,4 +111,28 @@
   .card-ai-content img {
     width: 100%;
   }
+
+  /* font-size */
+
+  .card-main h1 {
+    font-size: 4.6vw;
+  }
+
+  h2 {
+    font-size: 2.7vw;
+  }
+  
+  .card-grow-followers h2,
+  .card-create-post h2,
+  .card-ai-content h2 {
+    font-size: 2.9vw;
+  }
+  
+  .card-audience-growth h2 {
+    font-size: 1.5vw;
+  }
+
+  p {
+    font-size: 1.4vw;
+  } 
 }
