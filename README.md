@@ -28,10 +28,10 @@ Os usuários deverão ser capazes de:
 ### Screenshot
 
 #### Desktop:
-![](./screenshots/screenshot-desktop.png)
+![](./images/screenshots/screenshot-desktop.png)
 
 #### Mobile:
-![](./screenshots/screenshot-mobile.png)
+![](./images/screenshots/screenshot-mobile.png)
 
 ### Links
 

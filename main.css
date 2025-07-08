@@ -205,3 +205,144 @@ p {
   color: var(--color-black);
   text-decoration: underline;
 }
+
+/* media-queries */
+
+@media screen and (min-width: 35rem) {
+  .card {
+    padding: 3vh 20%;
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  body {
+    padding: 5vw 0;
+  }
+
+  .content {
+    max-width: 85%;
+    gap: 2vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    grid-template-areas: 
+    'content-side main main schedule-posts'
+    'content-side platforms consistent schedule-posts'
+    'content-side audience-growth grow-followers grow-followers'
+    ;
+  }
+
+  .card {
+    padding: 1.8vw;
+    max-width: none;
+  }
+
+  .card-main {
+    grid-area: main;
+    padding: 4vw 3.5vw;
+  }
+
+  .card-platforms {
+    grid-area: platforms;
+  }
+  .card-platforms img {
+    object-fit: cover;
+    object-position: left;
+    width: 153%;
+  }
+
+  .card-consistent-schedule {
+    grid-area: consistent;
+  }
+  .card-consistent-schedule img {
+    margin-bottom: -50%;
+    width: 100%;
+  }
+
+  .card-schedule-posts {
+    align-items: start;
+    grid-area: schedule-posts;
+    padding: 3vw 2vw;
+    text-align: left;
+  }
+  .card-schedule-posts img {
+    object-fit: cover;
+    object-position: left;
+    width: 180%;
+  }
+  .card-schedule-posts p {
+    max-width: none;
+    padding: 0;
+  }
+
+  .card-audience-growth {
+    grid-area: audience-growth;
+  }
+  .card-audience-growth img {
+    width: 90%;
+  }
+
+  .card-grow-followers {
+    gap: 1vw;
+    grid-area: grow-followers;
+    flex-direction: row;
+    padding: 1.5vw 1.8vw;
+    text-align: left;
+  }
+  .card-grow-followers img {
+    width: 45%;
+  }
+  .card-grow-followers h2 {
+    letter-spacing: normal;
+    margin-top: 0;
+  }
+
+  .content-side{
+    gap: 2vw;
+    grid-area: content-side;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .card-create-post {
+    justify-content: center;
+  }
+  .card-create-post img {
+    width: 100%;
+  }
+
+  .card-ai-content {
+    justify-content: space-between;
+  }
+  .card-ai-content img {
+    width: 100%;
+  }
+
+  /* font-size */
+
+  .card-main h1 {
+    font-size: 4.5vw;
+    max-width: none;
+  }
+
+  h2 {
+    font-size: 2.7vw;
+  }
+  
+  .card-grow-followers h2,
+  .card-create-post h2,
+  .card-ai-content h2 {
+    font-size: 3vw;
+  }
+  
+  .card-audience-growth h2 {
+    font-size: 1.5vw;
+  }
+
+  .text-larger {
+    font-size: 4.6vw;
+  }
+
+  p {
+    font-size: 1.4vw;
+  } 
+}
