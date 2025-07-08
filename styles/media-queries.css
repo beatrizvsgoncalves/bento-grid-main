@@ -115,7 +115,7 @@
   /* font-size */
 
   .card-main h1 {
-    font-size: 4.6vw;
+    font-size: 4.5vw;
   }
 
   h2 {
@@ -125,11 +125,15 @@
   .card-grow-followers h2,
   .card-create-post h2,
   .card-ai-content h2 {
-    font-size: 2.9vw;
+    font-size: 3vw;
   }
   
   .card-audience-growth h2 {
     font-size: 1.5vw;
+  }
+
+  .text-larger {
+    font-size: 4.6vw;
   }
 
   p {
