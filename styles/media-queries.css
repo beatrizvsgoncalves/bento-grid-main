@@ -50,9 +50,6 @@
     margin-bottom: -50%;
     width: 100%;
   }
-  .card-schedule-posts p {
-    padding: 0;
-  }
 
   .card-schedule-posts {
     align-items: start;
@@ -67,6 +64,7 @@
   }
   .card-schedule-posts p {
     max-width: none;
+    padding: 0;
   }
 
   .card-audience-growth {
