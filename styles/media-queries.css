@@ -30,9 +30,6 @@
     grid-area: main;
     padding: 4vw 3.5vw;
   }
-  .card-main h1 {
-    max-width: none;
-  }
 
   .card-platforms {
     grid-area: platforms;
@@ -114,6 +111,7 @@
 
   .card-main h1 {
     font-size: 4.5vw;
+    max-width: none;
   }
 
   h2 {
